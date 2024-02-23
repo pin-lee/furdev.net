@@ -38,13 +38,18 @@ td {
     gap: 1rem;
 }
 
+@media (min-width: 900px) {
+    .content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 .item {
     padding-right: 1rem;
     grid-column: auto;
     grid-row: auto;
     border: 1px solid;
     display: flex;
-    grid-template-columns: fit-content(1fr, max());
     align-content: center;
     min-height: 100%;
 }

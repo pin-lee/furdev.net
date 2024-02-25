@@ -1,11 +1,31 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
-    color: #111;
-    color-scheme: dark;
-}  
+}
 
 :root {
-    background: #fff;
+    color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background: #fff;
+        color: #111;
+    }
+
+    :root {
+        --hover-color: gainsboro;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #181a1b;
+        color: #e8e6e3;
+    }
+
+    :root {
+        --hover-color: #60686c;
+    }
 }
 
 body {
@@ -55,7 +75,7 @@ td {
 }
 
 .item:hover {
-    background-color: gainsboro;
+    background-color: var(--hover-color);
 }
 
 .item img {
@@ -74,4 +94,5 @@ td {
 
 .content a {
     text-decoration: none;
+    color: inherit
 }

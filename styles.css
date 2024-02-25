@@ -44,11 +44,11 @@ td {
 }
 
 .mono {
-    font: 1.3rem mono;
+    font: 1.3rem monospace;
 }
 
 #main_heading {
-    font-size: 150%;
+    font-size: 225%;
 }
 
 .content {
